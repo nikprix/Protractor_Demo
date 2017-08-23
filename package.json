@@ -1,0 +1,30 @@
+{
+  "name": "Protractor_Demo",
+  "version": "1.0.0",
+  "description": "Protractor Demo",
+  "main": "/protractor.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikprix/Protractor_Demo.git"
+  },
+  "author": "nikprix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikprix/Protractor_Demo/issues"
+  },
+  "homepage": "https://github.com/nikprix/Protractor_Demo#readme",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-protractor-runner": "*",
+    "grunt-env": "*",
+    "grunt-shell": "*",
+    "grunt-shell-spawn": "*",
+    "protractor": "*",
+    "protractor-jasmine2-html-reporter": "*"
+  }
+}
