@@ -25,20 +25,28 @@ describe('Todos empty form validation', function () {
 
         todosPage.to();
         todosPage.at();
+
     });
 
     it('Validate ToDo form\'s width in full screen: 550px', function(){
+
+        // NOTE, below two methods are fixing VERY ODD issue with Angular not being recognized on the page
+        // THIS NEEDS TO  BE REFACTORED, and fixed in BEFOREEACH methods!!! since something wrong is there!!!
+
+        todosPage.to();
+        todosPage.at();
+
         todosPage.todoFormField.getSize().then(function(elementSize){
             expect(elementSize.width).toEqual(550);
         });
     });
 
-    xit('Todos page title validation', function () {
+    it('Todos page title validation', function () {
         var title = 'AngularJS • TodoMVC';
         expect(todosPage.title).toEqual(title);
     });
 
-    xit('Todos page header validation', function () {
+    it('Todos page header validation', function () {
         var header = 'todos';
         expect(todosPage.header.getText()).toEqual(header);
     });
